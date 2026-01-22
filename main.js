@@ -1,5 +1,5 @@
 // 要素取得
-import { data } from "../data.js"
+import { data } from "./data.js"
 const output = document.getElementById("output");
 const randomBtn = document.getElementById("randomBtn");
 
