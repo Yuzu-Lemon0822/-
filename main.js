@@ -1,13 +1,12 @@
-// 要素取得
-import { data } from "./data.js"
-const output = document.getElementById("output");
-const randomBtn = document.getElementById("randomBtn");
+import { data } from "./data.js";
 
-// ===== ロジック（最低限） =====
+// 要素取得
 const output = document.getElementById("output");
 const btn = document.getElementById("randomBtn");
 
-const randomPick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+// ランダム1個取得
+const randomPick = (arr) =>
+  arr[Math.floor(Math.random() * arr.length)];
 
 btn.addEventListener("click", () => {
   const result = `
@@ -18,7 +17,7 @@ btn.addEventListener("click", () => {
 アクセサリ：${randomPick(data.アクセサリ)}
 雰囲気：${randomPick(data.雰囲気)}
 シチュエーション：${randomPick(data.シチュエーション)}
-  `.trim();
+`.trim();
 
   output.textContent = result;
 });
