@@ -1,4 +1,4 @@
-const VERSION = "ver β 0.1.0";
+const VERSION = "ver β 0.1.1";
 
 const versionEl = document.getElementById("version");
 versionEl.textContent = VERSION;
@@ -19,13 +19,13 @@ function pick() {
     表情：${randomPick(data.表情)}
     アクセサリ：${randomPick(data.アクセサリ)}
   `
-  answer += `服装(上)：${randomPick(data["服装(上)"])}`
+  answer += `服装(上)：${randomPick(data["服装(上)"])}\n`
   if (Math.random() < 0.5) {
-    answer += `服装(上)(重ね着)：${randomPick(data["服装(上)(重ね着)"])}`
+    answer += `服装(上)(重ね着)：${randomPick(data["服装(上)(重ね着)"])}\n`
   }
-  answer += `服装(下)：${randomPick(data["服装(下)"])}`
+  answer += `服装(下)：${randomPick(data["服装(下)"])}\n`
   if (Math.random() < 0.5) {
-    answer += `服装(下)(重ね着)：${randomPick(data["服装(下)(重ね着)"])}`
+    answer += `服装(下)(重ね着)：${randomPick(data["服装(下)(重ね着)"])}\n`
   }
 
   return answer;
