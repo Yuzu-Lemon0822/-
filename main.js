@@ -1,6 +1,10 @@
-import { data } from "./data.js";
+const VERSION = "ver β 0.1.0";
 
-// 要素取得
+const versionEl = document.getElementById("version");
+versionEl.textContent = VERSION;
+
+//要素取得
+import { data } from "./data.js";
 const output = document.getElementById("output");
 const btn = document.getElementById("randomBtn");
 
@@ -10,17 +14,17 @@ const randomPick = (arr) =>
 
 function pick() {
   let answer = `
-    性別：${randomPick(data.性別)}
+    見た目：${randomPick(data.見た目)}
     髪型：${randomPick(data.髪型)}
     表情：${randomPick(data.表情)}
     アクセサリ：${randomPick(data.アクセサリ)}
   `
   answer += `服装(上)：${randomPick(data["服装(上)"])}`
-  if (Math.random < 0.5) {
+  if (Math.random() < 0.5) {
     answer += `服装(上)(重ね着)：${randomPick(data["服装(上)(重ね着)"])}`
   }
   answer += `服装(下)：${randomPick(data["服装(下)"])}`
-  if (Math.random < 0.5) {
+  if (Math.random() < 0.5) {
     answer += `服装(下)(重ね着)：${randomPick(data["服装(下)(重ね着)"])}`
   }
 
