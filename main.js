@@ -1,4 +1,4 @@
-const VERSION = "ver β 0.1.1";
+const VERSION = "ver β 0.1.2";
 
 const versionEl = document.getElementById("version");
 versionEl.textContent = VERSION;
