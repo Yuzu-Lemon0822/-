@@ -14,7 +14,6 @@ const randomPick = (arr) =>
 
 function pick() {
   let answer = `
-    見た目：${randomPick(data.見た目)}
     髪型：${randomPick(data.髪型)}
     表情：${randomPick(data.表情)}
     アクセサリ：${randomPick(data.アクセサリ)}
